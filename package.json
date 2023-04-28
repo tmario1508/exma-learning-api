@@ -1,0 +1,31 @@
+{
+  "name": "exma-learning-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon -r dotenv/config src/server.ts"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "4.13.0",
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0",
+    "typescript": "^5.0.4"
+  }
+}
